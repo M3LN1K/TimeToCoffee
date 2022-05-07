@@ -111,7 +111,7 @@ hr {
 .header.fixed {
     padding: 10px 0;
 
-    background: url("../images/1612415489_108-p-korichnevii-fon-kofe-177.jpg") center no-repeat;
+    background: url("../images/1612391073_96-p-kofeinii-fon-kartinki-151.jpg") center no-repeat;
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
 
     position: fixed;
@@ -298,6 +298,10 @@ hr {
     bottom: 0;
     left: 0;
     z-index: 1;
+}
+
+.container{
+    overflow: hidden;
 }
 
 .slider__inner {
