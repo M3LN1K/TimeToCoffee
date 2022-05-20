@@ -1,0 +1,541 @@
+{% extends 'main/layout.html'%}
+{% load static %}
+
+{% block link %} <link rel="stylesheet" href= "{% static 'main/css/style.css' %}"> {% endblock %}
+
+{% block title %} TimeToCoffee {% endblock %}
+
+{% block slider %}
+        <div class="slider">
+            <div class="container">
+                <div class="slider__inner">
+                    <div class="slider__item active">
+                        <span class="slider__num">01</span>
+                        <span class="slider__text">Intro</span>
+                    </div>
+                    <div class="slider__item">
+                        <span class="slider__num">02</span>
+                        <span class="slider__text">Work</span>
+                    </div>
+                    <div class="slider__item">
+                        <span class="slider__num">03</span>
+                        <span class="slider__text">About</span>
+                    </div>
+                    <div class="slider__item">
+                        <span class="slider__num">04</span>
+                        <span class="slider__text">Contacts</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+{% endblock %}
+
+
+{% block card%}
+            <div class="card">
+
+                <div class="card__item">
+                    <div class="card__inner">
+                        <div class="card__img">
+                            <a href="tea.html"><img src="{% static 'main/images/about/124374997.webp' %}" alt=""></a>
+                        </div>
+                        <div class="card__text">История чая в Японии</div>
+                    </div>
+                </div>
+
+                <div class="card__item">
+                    <div class="card__inner">
+                        <div class="card__img">
+                            <a href="china_coffee.html"><img src="{% static  'main/images/about/ogawa1.jpg' %}", alt=""></a>
+                        </div>
+                        <div class="card__text">История кофе в Японии</div>
+                    </div>
+                </div>
+
+                <div class="card__item">
+                    <div class="card__inner">
+                        <div class="card__img">
+                            <a href="restaurant.html"><img src="{% static  'main/images/about/c1b2f46637199.5629390137d69.jpg'%}" alt=""></a>
+                        </div>
+                        <div class="card__text">Типы и особенности японских заведений</div>
+                    </div>
+                </div>
+            </div><!-- /.card -->
+{% endblock%}
+
+
+
+{% block content %}
+    <!-- Statistics -->
+    <div class="statistics">
+        <div class="container">
+
+            <div class="stat">
+                <div class="stat__item">
+                    <div class="stat__count">42</div>
+                    <div class="stat__text"></div>
+                </div>
+                <div class="stat__item">
+                    <div class="stat__count">125</div>
+                    <div class="stat__text">Сортов кофе</div>
+                </div>
+                <div class="stat__item">
+                    <div class="stat__count">15</div>
+                    <div class="stat__text">award winner</div>
+                </div>
+                <div class="stat__item">
+                    <div class="stat__count">99</div>
+                    <div class="stat__text">cup of coffee</div>
+                </div>
+                <div class="stat__item">
+                    <div class="stat__count">24</div>
+                    <div class="stat__text">members</div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- Services -->
+    <section class="section" id="opportunities">
+        <div class="container">
+
+            <div class="section__header">
+                <h3 class="section__suptitle">Для вас</h3>
+                <h2 class="section__title">Наши возможности</h2>
+            </div>
+
+            <div class="services">
+                <div class="services__item  services__item--border">
+                    <img class="services__icon" src="{% static  'main/images/services/photography.png'%}" alt="">
+
+                    <div class="services__title">Фотосессии</div>
+                    <div class="services__text">Мы предлогаем каждому клиенту сделать фотографии с косплейрами. У нас проходят дни посвященные аниме. В эти дни мы преглащаем косплееров, они будут встречать вас на входе в кофейню и в зале. Каждый желающий может сделать несколько фото с нашими гостями.</div>
+                </div>
+                <div class="services__item  services__item--border">
+                    <img class="services__icon" src="{% static  'main/images/services/work.png'%}" alt="">
+
+                    <div class="services__title">Возможность работать</div>
+                    <div class="services__text">В заведении клиенты могут работать. Для этого мы оборудовали каждое место в кофейне зарядками.</div>
+                </div>
+                <div class="services__item  services__item--border">
+                    <img class="services__icon" src="{% static  'main/images/services/breakfast.png'%}" alt="">
+
+                    <div class="services__title">Быстрый перекус</div>
+                    <div class="services__text">В кофейне клиенты могут не только попить кофе, но и заказать завтраки и просто перекусить на скорую руку.</div>
+                </div>
+                <div class="services__item">
+                    <img class="services__icon" src="{% static  'main/images/services/master_class.png' %}" alt="">
+
+                    <div class="services__title">Мастер-классы</div>
+                    <div class="services__text">В заведении регулярно проводятся масте-классы от поворов по приготовлению различных блюд и японского кофе в разных варациях и представлениях.</div>
+                </div>
+                <div class="services__item">
+                    <img class="services__icon" src="{% static  'main/images/services/delivery.png' %}" alt="">
+
+                    <div class="services__title">Доставка</div>
+                    <div class="services__text">Осущесвтляется доставка еды и напитков.</div>
+                </div>
+                <div class="services__item">
+                    <img class="services__icon" src="{% static  'main/images/services/referral.png' %}" alt="">
+
+                    <div class="services__title">Реферальная система</div>
+                    <div class="services__text">Присутствует реферальная системи и скидки постоянным поситителям.</div>
+                </div>
+            </div>
+
+        </div><!-- /.container -->
+    </section>
+
+
+
+    <!-- Wedo -->
+    <section class="section" id="services">
+        <div class="container">
+
+            <div class="section__header">
+                <h3 class="section__suptitle">Сервис</h3>
+                <h2 class="section__title">Наше меню</h2>
+                <div class="section__text">
+                    <p>Меню состоит не только из японского кофе, но и из блюд японии.</p>
+                </div>
+            </div>
+
+            <div class="wedo">
+                <div class="wedo__item">
+                    <img class="wedo__img" src="{% static 'main/images/menu.jpg'  %}" alt="">
+                </div>
+
+                <div class="wedo__item">
+
+                    <div class="accordion">
+                        <div class="accordion__item" data-collapse="#wedo_1">
+                            <div class="accordion__header">
+                                <img class="accordion__icon" src="{% static  'main/images/services/coffee.png'%}" alt="">
+                                <div class="accordion__title">Горячие напитки</div>
+                            </div>
+                            <div class="accordion__content" id="wedo_1">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                            </div>
+                        </div>
+
+                        <div class="accordion__item active" data-collapse="#wedo_2">
+                            <div class="accordion__header">
+                                <img class="accordion__icon" src="{% static  'main/images/services/desserts.png'%}" alt="">
+                                <div class="accordion__title">Десерты</div>
+                            </div>
+                            <div class="accordion__content" id="wedo_2">
+                                <p>Японский шоколадный пирог, Японский десерт моти (mochi), </p>
+                            </div>
+                        </div>
+
+                        <div class="accordion__item" data-collapse="#wedo_3">
+                            <div class="accordion__header">
+                                <img class="accordion__icon" src="{% static  'main/images/services/dishes.png' %}" alt="">
+                                <div class="accordion__title">Основые блюда</div>
+                            </div>
+                            <div class="accordion__content" id="wedo_3">
+                                <p>Оякодон (японский омлет с рисом и курицей), Лапша удон с курицей, вешенками и зеленым луком, Картофельный суп-пюре по-японски, Курица терияки, Суши, Темпура, Сукияки, Рамен, Рис карри, Тонкацу, Лапша соба, Плов по-японски, Кальмары в кляре, </p>
+                            </div>
+                        </div>
+                    </div><!-- /.accordion -->
+
+                </div><!-- /.wedo__item -->
+            </div><!-- /.wedo -->
+
+        </div>
+    </section>
+
+
+    <!-- Reviews 1 -->
+    <div class="section  section--gray">
+        <div class="container">
+
+            <div class="reviews">
+                <div data-slider>
+                    <div>
+                        <div class="reviews__item">
+                            <img class="reviews__photo" src="{% static  'main/images/bde6d4eca85fc5f98102df92dab690349de83384r1-736-734v2_hq.jpg' %}" alt="">
+                            <div class="reviews__text">“Когда тебя ранят, ты начинаешь ненавидеть врага. А когда мы сами кого-то раним, приходится что-то делать с их ненавистью и собственным чувством вины. Но мы знаем, что такое боль и именно поэтому стараемся быть добрее к другим. Это и делает нас людьми.”</div>
+                            <div class="reviews__author">Джирайя</div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="reviews__item">
+                            <img class="reviews__photo" src="{% static  'main/images/дейдара2.jpg'%} " alt="">
+                            <div class="reviews__text">“Творцу необходимы источники вдохновения, иначе его талант погаснет...”</div>
+                            <div class="reviews__author">Дейдара</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- Team -->
+    <section class="section">
+        <div class="container">
+
+            <div class="section__header">
+                <h3 class="section__suptitle">Кто мы</h3>
+                <h2 class="section__title">Наша команда</h2>
+                <div class="section__text">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card__item">
+                    <div class="card__inner">
+                        <div class="card__img">
+                            <img src="{% static  'main/images/team/1.jpg' %}" alt="">
+                        </div>
+                        <div class="card__text">
+                            <div class="social">
+                                <a class="social__item" href="#" target="_blank">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                                <a class="social__item" href="#" target="_blank">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                                <a class="social__item" href="#" target="_blank">
+                                    <i class="fab fa-pinterest-p"></i>
+                                </a>
+                                <a class="social__item" href="#" target="_blank">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card__info">
+                        <div class="card__name"></div>
+                        <div class="card__prof"></div>
+                    </div>
+                </div><!-- /.card__item -->
+
+                <div class="card__item">
+                    <div class="card__inner">
+                        <div class="card__img">
+                            <img src="{% static  'main/images/team/2.jpg' %}" alt="">
+                        </div>
+                        <div class="card__text">
+                            <div class="social">
+                                <a class="social__item" href="#" target="_blank">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                                <a class="social__item" href="#" target="_blank">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                                <a class="social__item" href="#" target="_blank">
+                                    <i class="fab fa-pinterest-p"></i>
+                                </a>
+                                <a class="social__item" href="#" target="_blank">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card__info">
+                        <div class="card__name">Мельников Никита</div>
+                        <div class="card__prof">Автор проекта/Full-staсk разработчик</div>
+                    </div>
+                </div><!-- /.card__item -->
+
+                <div class="card__item">
+                    <div class="card__inner">
+                        <div class="card__img">
+                            <img src=" {% static 'main/images/team/3.jpg'%}" alt="">
+                        </div>
+                        <div class="card__text">
+                            <div class="social">
+                                <a class="social__item" href="#" target="_blank">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                                <a class="social__item" href="#" target="_blank">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                                <a class="social__item" href="#" target="_blank">
+                                    <i class="fab fa-pinterest-p"></i>
+                                </a>
+                                <a class="social__item" href="#" target="_blank">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card__info">
+                        <div class="card__name"> </div>
+                        <div class="card__prof"></div>
+                    </div>
+                </div><!-- /.card__item -->
+
+            </div><!-- /.card -->
+
+        </div><!-- /.container -->
+    </section>
+
+    <!-- Works -->
+    <section class="section" id="works">
+        <div class="container">
+            <div class="section__header">
+                <h3 class="section__suptitle">Немного о кофе</h3>
+                <h2 class="section__title">Кофе которое мы используем</h2>
+                <div class="section__text">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="works">
+            <div class="works__col">
+                <div class="works__item">
+                    <img class="works__image" src="{% static  'main/images/works/O1CN012HgUL1g6a8dlfK8_!!3089219180.jpg'%}" alt="">
+                    <div class="works__info">
+                        <div class="works__title">Blendy</div>
+                    </div>
+                </div>
+                <div class="works__item">
+                    <img class="works__image" src="{% static  'main/images/works/O1CN01zE6H4l1Fz9AtdbJnF_!!2206124240557.jpg'%}" alt="">
+                    <div class="works__info">
+                        <div class="works__title">Maxim</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="works__col">
+                <div class="works__item">
+                    <img class="works__image" src="{% static  'main/images/works/19c2d6fc7523ca6e29a26eb457e13361.jpg'%}" alt="">
+                    <div class="works__info">
+                        <div class="works__title">UCC</div>
+                    </div>
+                </div>
+                <div class="works__item">
+                    <img class="works__image" src="{% static  'main/images/works/652263_1.jpg'%}" alt="">
+                    <div class="works__info">
+                        <div class="works__title">Bushido</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="works__col">
+                <div class="works__item">
+                    <img class="works__image" src="{% static  'main/images/works/O1CN01n6JZOt1dHgSsL8stT_!!0-item_pic.jpg'%}" alt="">
+                    <div class="works__info">
+                        <div class="works__title">Приготовление японского кофе</div>
+                    </div>
+                </div>
+                <div class="works__item">
+                    <img class="works__image" src="{% static  'main/images/works/TB1oUSGNXXXXXa5XFXXXXXXXXXX_!!0-item_pic.jpg'%}" alt="">
+                    <div class="works__info">
+                        <div class="works__title">Японская посуда для кофе</div>
+                    </div>
+                </div>
+            </div>
+        </div><!-- /.works -->
+    </section>
+
+
+    <!-- Reviews 2 -->
+    <div class="section section--gray">
+        <div class="container">
+
+            <div class="reviews">
+                <div data-slider>
+                    <div>
+                        <div class="reviews__item">
+                            <img class="reviews__photo" src="{% static  'main/images/шикамару.jpg'%}" alt="">
+                            <div class="reviews__text">“Не бывает безвыходных ситуаций. Бывают ситуации, выход из которых тебя не устраивает.”</div>
+                            <div class="reviews__author">Нара Шикамару</div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="reviews__item">
+                            <img class="reviews__photo" src="{% static  'main/images/итачи.png'%}" alt="">
+                            <div class="reviews__text">“Если хочешь понять, кто ты есть на самом деле, то должен посмотреть на свою истинную сущность и принять себя таким, какой ты есть. Я не смог сделать этого... Я лгал всем, и даже себе, стирая свою истинную сущность. А тот, кто не способен принять самого себя, рано или поздно потерпит поражение!”</div>
+                            <div class="reviews__author">Итачи Учиха</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- Blog -->
+    <section class="section" id="blog">
+        <div class="container">
+
+            <div class="section__header">
+                <h3 class="section__suptitle">Блог</h3>
+                <h2 class="section__title">Статьи о япониской культуре</h2>
+            </div>
+
+            <div class="blog">
+                <div class="blog__item">
+                    <div class="blog__header">
+                        <a href="anime.html">
+                            <img class="blog__photo" src="{% static  'main/images/blog/scale_1200.jpg'%}" alt="">
+                        </a>
+                        <div class="blog__date">
+                            <div class="blog__date-day">5</div>
+                            Апреля
+                        </div>
+                    </div>
+                    <div class="blog__content">
+                        <div class="blog__title">
+                            <a href="anime.html">Аниме, как часть японской культуры.</a>
+                        </div>
+                        <div class="blog__text">Наше заведение пропитанно японской культурой. Аниме - это часть культуры японии. В японии есть дни которые посвященый какому-либо аниме, так вот, и мы решили сделать это часть нашего заведения.</div>
+                    </div>
+                    <div class="blog__footer">
+                        <div class="blog-stat">
+                            <span class="blog-stat__item">
+                                <i class="far fa-eye"></i> 2142
+                            </span>
+                            <span class="blog-stat__item">
+                                <i class="far fa-comment-dots"></i> 1593
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="blog__item">
+                    <div class="blog__header">
+                        <a href="#">
+                            <a href="cosplay.html"><img class="blog__photo" src="{% static  'main/images/blog/2-08.jpg'%}" alt=""></a>
+                        </a>
+                        <div class="blog__date">
+                            <div class="blog__date-day">15</div>
+                            Апреля
+                        </div>
+                    </div>
+                    <div class="blog__content">
+                        <div class="blog__title">
+                            <a href="cosplay.html">Косплей как стиль жизни.</a>
+                        </div>
+                        <div class="blog__text">Что это такое, как развивалось это направление и как появилось в России.</div>
+                    </div>
+                    <div class="blog__footer">
+                        <div class="blog-stat">
+                            <span class="blog-stat__item">
+                                <i class="far fa-eye"></i> 732
+                            </span>
+                            <span class="blog-stat__item">
+                                <i class="far fa-comment-dots"></i> 195
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="blog__item">
+                    <div class="blog__header">
+                        <a href="#">
+                            <img class="blog__photo" src="{% static  'main/images/blog/_background.jpg'%}" alt="">
+                        </a>
+                        <div class="blog__date">
+                            <div class="blog__date-day">29</div>
+                            Апреля
+                        </div>
+                    </div>
+                    <div class="blog__content">
+                        <div class="blog__title">
+                            <a href="#">Японская кухня.</a>
+                        </div>
+                        <div class="blog__text">Особенности и секреты самой необычной кухни мира стали раскрываться совсем недавно. Бытует мнение, что во многом произошло это благодаря двум талантливым поварам, которые жили и творили в ХХ веке.</div>
+                    </div>
+                    <div class="blog__footer">
+                        <div class="blog-stat">
+                            <span class="blog-stat__item">
+                                <i class="far fa-eye"></i> 821
+                            </span>
+                            <span class="blog-stat__item">
+                                <i class="far fa-comment-dots"></i> 302
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- /.blog -->
+
+        </div><!-- /.container -->
+    </section>
+
+
+    <!-- Map -->
+    <section class="section  section--map">
+        <div class="container">
+            <div class="map">
+                <h2 class="map__title">
+                    <div><i class="fas fa-map-marker-alt"></i></div>
+                    <a href="https://yandex.ru/maps/14/tver/?ll=35.882806%2C56.850229&mode=whatshere&whatshere%5Bpoint%5D=35.880696%2C56.850790&whatshere%5Bzoom%5D=17.09&z=17.09" target="_blank">Показать на карте</a>
+                </h2>
+            </div>
+        </div>
+    </section>
+{% endblock %}
+

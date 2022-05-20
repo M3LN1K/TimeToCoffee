@@ -1,0 +1,24 @@
+.article__text{
+	font-size: 20px;
+    color: #8c5700;
+    text-align: left;
+}
+.article__image{
+	display: block;
+    max-width: 100%;
+    height: auto;
+}
+.article__image_border{
+    display: block;
+    max-width: 50%;
+    height: auto;
+    padding: 20px;
+
+}
+
+span{
+    font-size: 25px;
+    font-family: Monotype Corsiva, sans-serif;
+    text-decoration: underline;
+    color: gray;
+}

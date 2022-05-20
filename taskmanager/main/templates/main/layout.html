@@ -1,0 +1,216 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href= "{% static 'main/css/style.css' %}">
+    {% block link %}
+
+    {% endblock %}
+    <link href=" https://fonts.googleapis.com/css?family=Kaushan+Script|Montserrat:300i,400,700&amp;subset=cyrillic-ext" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+
+     <title>{% block title %}  {% endblock %}</title>
+</head>
+<body>
+
+
+<header class="header" id="header">
+    <div class="container">
+        <div class="header__inner">
+            <div class="header__logo" data-scroll="#intro">TimeToCoffee</div>
+
+            <nav class="nav" id="nav">
+                <a class="nav__link" href="#" data-scroll="#about">О кофейне</a>
+                <a class="nav__link" href="#" data-scroll="#opportunities">Возможности</a>
+                <a class="nav__link" href="#" data-scroll="#services">Меню</a>
+                <a class="nav__link" href="#" data-scroll="#works">Приготовление кофе</a>
+                <a class="nav__link" href="#" data-scroll="#blog">Блог</a>
+                <a class="nav__link" href="#" data-scroll="#footer">Контакты</a>
+                <a class="nav__link" href="#">
+                    <i class="fas fa-shopping-cart"></i>
+                </a>
+                <a class="nav__link" href="#">
+                    <i class="fas fa-search"></i>
+                </a>
+            </nav>
+
+            <button class="nav-toggle" id="nav_toggle" type="button">
+                <span class="nav-toggle__item">Menu</span>
+            </button>
+        </div>
+    </div>
+</header>
+<div class="page">
+
+{% block intro%}
+    <!-- Intro -->
+    <div class="intro" id="intro">
+        <div class="container">
+            <div class="intro__inner">
+                <h2 class="intro__suptitle">TimeToCoffee</h2>
+                <h1 class="intro__title">Вкусное японское кофе по доступным ценам</h1>
+
+                <a class="btn" href="#">Читать далее</a>
+            </div>
+        </div>
+        {% block slider%}
+
+         {% endblock%}
+    </div><!-- /.intro -->
+{% endblock%}
+
+{% block about%}
+    <!-- About -->
+    <section class="section" id="about">
+        <div class="container">
+
+            <div class="section__header">
+                <h3 class="section__suptitle">Презентация</h3>
+                <h2 class="section__title">Краткое описани</h2>
+                <div class="section__text">
+                    <p>Кофейня "Time To Coffee" - это место где каждый сможет окунуться в японскую культуру, сфотографироваться с косплейрами любимых аниме-сериалов и полнометражных картин,
+                    отведать вкус настоящего японского кофе, узнать рецепты приготовления японского кофе
+                    в домашних условиях от проффесионалов своего дела. Вы погрузитесь в японскую отмосферу благодря японскому дизайну нашего заведения, так же, весь персонал одет в соответсвии с японской культурой.
+                    </p>
+                </div>
+            </div>
+
+            {% block card%}
+
+            {% endblock%}
+        </div><!-- /.container -->
+    </section><!-- /.about -->
+{% endblock%}
+
+{% block content %}
+
+{% endblock %}
+
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="footer" id="footer">
+        <div class="container">
+
+            <div class="footer__inner">
+                <div class="footer__col  footer__col--first">
+                    <div class="footer__logo">TimeToCoffee</div>
+                    <div class="footer__text">Кофейня "Time To Coffee" - это место где каждый сможет окунуться в японскую культуру, сфотографироваться с косплейрами любимых аниме-сериалов и полнометражных картин,
+                    отведать вкус настоящего японского кофе, узнать рецепты приготовления японского кофе
+                    в домашних условиях от проффесионалов своего дела. Вы погрузитесь в японскую отмосферу благодря японскому дизайну нашего заведения, так же, весь персонал одет в соответсвии с японской культурой.</div>
+
+                    <div class="footer__social">
+                        <div class="footer__social-header">
+                            <b>15К</b> Последователей
+                        </div>
+                        <div class="footer__social-content">
+                            Следить за нами:
+                            <a href="https://vk.com/public211947597" target="_blank">
+                                <i class="fab fa-vk"></i>
+                            </a>
+                            <a href="https://t.me/+snQJSK57BJ4yMDgy" target="_blank">
+                                <i class="fab fa-telegram"></i>
+                            </a>
+                            <a href="#" target="_blank">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <form class="subscribe" action="/" method="post">
+                        <input class="subscribe__input" type="email" name="name" placeholder="Your Email...">
+                        <button class="subscribe__btn" type="submit">Подписаться</button>
+                    </form>
+                </div><!-- /.footer__col -->
+
+                <div class="footer__col  footer__col--second">
+                    <div class="footer__title">Статьи</div>
+
+                    <div class="blogs">
+                        <div class="blogs__item">
+                            <img class="blogs__img" src="{% static  'main/images/blog/scale_1200.jpg'%}" alt="">
+                            <div class="blogs__content">
+                                <a class="blogs__title" href="anime.html">АНИМЕ, КАК ЧАСТЬ ЯПОНСКОЙ КУЛЬТУРЫ.</a>
+                                <div class="blogs__date">5 Апреля, 2022</div>
+                            </div>
+                        </div>
+
+                        <div class="blogs__item">
+                            <img class="blogs__img" src="{% static  'main/images/blog/670667_15091809480036171550.jpg'%}" alt="">
+                            <div class="blogs__content">
+                                <a class="blogs__title" href="japanese_tea.html">Японский чай. Его особенности и сорта.</a>
+                                <div class="blogs__date">15 Апреля, 2022</div>
+                            </div>
+                        </div>
+
+                        <div class="blogs__item">
+                            <img class="blogs__img" src="{% static  'main/images/blog/_background.jpg'%}" alt="">
+                            <div class="blogs__content">
+                                <a class="blogs__title" href="coffee.html">Кофе и вся информация о нем: история, виды, польза и вред, приготовление.</a>
+                                <div class="blogs__date">29 Апреля, 2022</div>
+                            </div>
+                        </div>
+                    </div><!-- /.blogs -->
+                </div>
+
+                <div class="footer__col  footer__col--third">
+                    <div class="footer__title">Инстаграмм</div>
+
+                    <div class="instagram">
+                        <a class="instagram__item" href="#" target="_blank">
+                            <img src=" {% static 'main/images/instagram/ebgGv2rLeh9bcRsc_U0d8vb3-NWqUVWfszeRL8FeXWkcw2-0orqT_8otCtkrx5C_IWEwVdM8zF0MoQn5IVV7k1Ad.jpg'%}" alt="">
+                        </a>
+                        <a class="instagram__item" href="#" target="_blank">
+                            <img src="{% static  'main/images/instagram/10b761b8f783e61fd85104747e1cb5ab.jpg'%}" alt="">
+                        </a>
+                        <a class="instagram__item" href="#" target="_blank">
+                            <img src="{% static  'main/images/instagram/KwgtjUguAWV7nfVJOd6Le5XKvsCqSj6OJQOH8XyXQtCRCgKgXqNocsE-JsDQTI3vT3ZSPMLBmLSFgfC_t0Ii-gzm.jpg'%}" alt="">
+                        </a>
+                        <a class="instagram__item" href="#" target="_blank">
+                            <img src="{% static  'main/images/instagram/YQX2pK7uFjQzcXatNI8X2MK98e-3oHj4FJ6abW5F7ybpvL9qEgr-gCXkXcaUGBgcl9qE5Rt5t95ebk4cFbUh5lu7.jpg'%}" alt="">
+                        </a>
+                        <a class="instagram__item" href="#" target="_blank">
+                            <img src="{% static  'main/images/instagram/zvxYPBXj5KxhEw7XTS11IrDCE-hzQA-xCtX8jXadEBtjpSn6s9uujeoaSghHga2YCV7iLdC8JEEvDJymgKCFmuPq.jpg'%}" alt="">
+                        </a>
+                        <a class="instagram__item" href="#" target="_blank">
+                            <img src="{% static  'main/images/instagram/qaOqNMmgURGVng1nTUlxQ2UqzM8avU7UaD905EGtF_nDwUYYVtjcW3OEf1spbKZzOirrHcZO-cCdXh4ue2zN8SjT.jpg'%}" alt="">
+                        </a>
+                        <a class="instagram__item" href="#" target="_blank">
+                            <img src="{% static  'main/images/instagram/sl1.jpg'%}" alt="">
+                        </a>
+                        <a class="instagram__item" href="#" target="_blank">
+                            <img src="{% static  'main/images/instagram/i.jpg'%}" alt="">
+                        </a>
+                        <a class="instagram__item" href="#" target="_blank">
+                            <img src="{% static  'main/images/instagram/1611084573_1-p-fon-yaponskaya-kukhnya-1.jpg'%}" alt="">
+                        </a>
+                    </div>
+                </div>
+
+            </div><!-- /.footer__inner -->
+
+            <div class="copyright">
+
+            </div>
+
+        </div><!-- /.container -->
+    </footer>
+
+</div><!-- /.page -->
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src=" {% static 'main/js/app.js' %}"></script>
+
+
+</body>
+</html>

@@ -1,0 +1,295 @@
+.article__text{
+	font-size: 20px;
+    color: #8c5700;
+    text-align: left;
+}
+.article__image{
+	display: block;
+    max-width: 100%;
+    height: auto;
+    transition: opacity .1s linear;
+}
+
+span{
+    font-size: 25px;
+    font-family: Monotype Corsiva, sans-serif;
+    text-decoration: underline;
+    color: gray;
+}
+
+.rounded {
+	counter-reset: li; 
+	list-style: none; 
+	font: 20px "Trebuchet MS", "Lucida Sans";
+	padding: 0;
+	text-shadow: 0 1px 0 rgba(255,255,255,.5);
+}
+
+.rounded a {
+	position: relative;
+	display: block;
+	padding: .4em .4em .4em 2em;
+	margin: .5em 0;
+	background: #DAD2CA;
+	color: #444;
+	text-decoration: none;
+	border-radius: .3em;
+	transition: .3s ease-out;
+}
+
+.rounded a:hover {background: #E9E4E0;}
+.rounded a:hover:before {transform: rotate(360deg);}
+.rounded a:before {
+	content: counter(li);
+	counter-increment: li;
+	position: absolute;
+	left: -1.3em;
+	top: 50%;
+	margin-top: -1.3em;
+	background: #8FD4C1;
+	height: 2em;
+	width: 2em;
+	line-height: 2em;
+	border: .3em solid white;
+	text-align: center;
+	font-weight: bold;
+	border-radius: 2em;
+	transition: all .3s ease-out;
+}
+
+.border_1 {
+	list-style: none;
+	padding: 0;
+}
+.border_1 li {
+	font-family: "Trebuchet MS", "Lucida Sans";
+	padding: 7px 20px;
+	margin-bottom: 10px;
+	border-radius: 5px;
+	border-left: 10px solid #f05d22; 
+	box-shadow: 2px -2px 5px 0 rgba(0,0,0,.1),
+     -2px -2px 5px 0 rgba(0,0,0,.1),
+    2px 2px 5px 0 rgba(0,0,0,.1),
+    -2px 2px 5px 0 rgba(0,0,0,.1);
+	font-size: 20px;
+	letter-spacing: 2px;
+	transition: 0.3s all linear;
+}
+.border_1 li:nth-child(2){border-color: #8bc63e;}
+.border_1 li:nth-child(3){border-color: #fcba30;}
+.border_1 li:nth-child(4){border-color: #1ccfc9;}
+.border_1 li:nth-child(5){border-color: #493224;}
+.border_1 li:hover {border-left: 10px solid transparent;}
+.border_1 li:nth-child(1):hover {border-right: 10px solid #f05d22;}
+.border_1 li:nth-child(2):hover {border-right: 10px solid #8bc63e;}
+.border_1 li:nth-child(3):hover {border-right: 10px solid #fcba30;}
+.border_1 li:nth-child(4):hover {border-right: 10px solid #1ccfc9;}
+.border_1 li:nth-child(5):hover {border-right: 10px solid #493224;}
+
+.pills {
+	padding: 0;
+  	margin-left: 0;
+  	list-style: none;
+  	counter-reset: li;
+  	font-family: calibri;
+  	font-size: 20px;
+}
+.pills li {
+ 	padding: 10px 0;
+  	position: relative;
+  	left: 1.5em;
+  	margin-bottom: 0.75em;
+  	padding-left: 1em;
+  	background: #E3DEDC;
+}
+.pills li:before {
+  	padding: 10px 0;
+  	position: absolute;
+  	top: 0;
+  	bottom: 0;
+  	left: -1.5em;
+  	width: 1.875em;
+  	text-align: center;
+  	color: white;
+  	font-weight: bold;
+  	background: #D66786;
+  	border-bottom-left-radius: 70em;
+  	border-top-left-radius: 70em;
+  	counter-increment: li;
+  	content: counter(li);
+}
+
+
+
+* {box-sizing: border-box}
+.mySlides {display: none}
+
+img {vertical-align: middle;}
+
+.slideshow-container {
+	max-width: 600px;
+	position: relative;
+	margin: auto;
+}
+
+/* Кнопки next & previous */
+
+.prev, .next {
+	cursor: pointer;
+	position: absolute;
+	top: 50%;
+	width: auto;
+	padding: 16px;
+	margin-top: -22px;
+	color: white;
+	font-weight: bold;
+	font-size: 18px;
+	transition: 0.6s ease;
+	border-radius: 0 3px 3px 0;
+	user-select: all;
+}
+
+/* Измените положение "next button" */
+      
+.next {
+	right: 0;
+	border-radius: 3px 0 0 3px;
+}
+      
+/* Добавьте черный фоновый цвет с небольшой прозрачностью */
+      
+.prev:hover, .next:hover {
+	background-color: rgba(0,0,0,0.8);
+}
+
+/* Подпись под изображением */
+.text {
+	color: #ffffff;
+	font-size: 15px;
+	padding: 8px 12px;
+	position: absolute;
+	bottom: 8px;
+	width: 100%;
+	text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+	color: #ffffff;
+	font-size: 12px;
+	padding: 8px 12px;
+	position: absolute;
+	top: 0;
+}
+
+/* Точки/маркеры/указатели */
+.dot {
+	cursor: pointer;
+	height: 15px;
+	width: 15px;
+	margin: 0 2px;
+	background-color: #999999;
+	border-radius: 50%;
+	display: inline-block;
+	transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+	background-color: #111111;
+}
+
+/* Выцветание анимации */
+.fade {
+	-webkit-animation-name: fade;
+	-webkit-animation-duration: 1.5s;
+	animation-name: fade;
+	animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+	from {opacity: .4} 
+	to {opacity: 1}
+}
+
+@keyframes fade {
+	from {opacity: .4} 
+	to {opacity: 1}
+}
+
+/* Для маленьких экранов увеличьте размер текста  */
+@media only screen and (max-width: 300px) {
+	.prev, .next,.text {font-size: 11px}
+}
+
+
+
+
+.slider {
+  position: relative;
+  width: 680px;
+  margin: 50px auto;
+  box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.75);
+}
+
+.slider input[name="switch"] {
+  display: none;
+}
+
+.switch {
+  position: absolute;
+  left: 0;
+  bottom: -40px;
+  text-align: center;
+  width: 100%;
+}
+
+.switch label {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  cursor: pointer;
+  margin: 0 3px;
+  box-shadow: 0 0 2px 0 rgba(0, 0, 0, .8);
+  border-radius: 50%;
+  border: 5px solid #2f363c;
+  background-color: #738290;
+}
+
+#btn1:checked~.switch label[for="btn1"] {
+  background-color: white;
+}
+
+#btn2:checked~.switch label[for="btn2"] {
+  background-color: white;
+}
+
+#btn3:checked~.switch label[for="btn3"] {
+  background-color: white;
+}
+
+.slider-inner {
+  overflow: hidden;
+}
+
+.slides {
+  width: 300%;
+  transition: all 0.5s;
+}
+
+.slides img {
+  width: 680px;
+  height: 340px;
+  float: left;
+}
+
+#btn1:checked~slider-inner slides {
+  transform: translate(0);
+}
+
+#btn2:checked~.slider-inner .slides {
+  transform: translate(-680px);
+}
+
+#btn3:checked~.slider-inner .slides {
+  transform: translate(-1360px);
+}

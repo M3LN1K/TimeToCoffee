@@ -1,0 +1,172 @@
+.article__text{
+    font-size: 20px;
+    color: #8c5700;
+    text-align: left;
+}
+.article__image{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+.article__image_border{
+    display: block;
+    max-width: 50%;
+    height: auto;
+    padding: 20px;
+
+}
+
+span{
+    font-size: 25px;
+    font-family: Monotype Corsiva, sans-serif;
+    text-decoration: underline;
+    color: gray;
+}
+
+.image_center{
+    border: 1px solid #333; /* Параметры рамки */
+    padding: 7px; /* Поля внутри блока */
+    margin: 10px 5px 5px 5px; /* Отступы вокруг */
+    background: #f0f0f0; /* Цвет фона */ 
+}
+
+.margin{
+    font-size: 25px;
+    font-family: Monotype Corsiva, sans-serif;
+    background: #DBD7D2;
+    border-left: 15px solid #483224;;
+    margin: 30px;
+}
+
+.simple-little-table {
+    font-family: Monotype Corsiva, sans-serif;
+    color: #8c5700;
+    font-size: 20px;
+    text-shadow: 1px 1px 0 #fff;
+    background: #eaebec;
+    margin: 20px;
+    border: #ccc 1px solid;
+    border-collapse: separate;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    -moz-box-shadow: 0 1px 2px #d1d1d1;
+    -webkit-box-shadow: 0 1px 2px #d1d1d1;
+    box-shadow: 0 1px 2px #d1d1d1;
+}
+
+.simple-little-table th {
+    font-weight: 700;
+    padding: 21px 25px 22px;
+    border-top: 1px solid #fafafa;
+    border-bottom: 1px solid #e0e0e0;
+    background: #ededed;
+    background: -webkit-gradient(linear, left top, left bottom, from(#ededed), to(#ebebeb));
+    background: -moz-linear-gradient(top, #ededed, #ebebeb);
+}
+
+.simple-little-table th:first-child {
+    text-align: left;
+    padding-left: 20px;
+}
+
+.simple-little-table tr:first-child th:first-child {
+    border-top-left-radius: 3px;
+}
+
+.simple-little-table tr:first-child th:last-child {
+    border-top-right-radius: 3px;
+}
+
+.simple-little-table tr {
+    text-align: center;
+    padding-left: 20px;
+}
+
+.simple-little-table tr td:first-child {
+    text-align: center;
+    padding-left: 20px;
+    border-left: 0;
+}
+
+.simple-little-table tr td {
+    padding: 18px;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #e0e0e0;
+    border-left: 1px solid #e0e0e0;
+    background: #fafafa;
+    background: -webkit-gradient(linear, left top, left bottom, from(#fbfbfb), to(#fafafa));
+    background: -moz-linear-gradient(top, #fbfbfb, #fafafa);
+}
+
+.simple-little-table tr:nth-child(even) td {
+    background: #f6f6f6;
+    background: -webkit-gradient(linear, left top, left bottom, from(#f8f8f8), to(#f6f6f6));
+    background: -moz-linear-gradient(top, #f8f8f8, #f6f6f6);
+}
+
+.simple-little-table tr:last-child td {
+    border-bottom: 0;
+}
+
+.simple-little-table tr:last-child td:first-child {
+    border-bottom-left-radius: 3px;
+}
+
+.simple-little-table tr:last-child td:last-child {
+    border-bottom-right-radius: 3px;
+}
+
+.simple-little-table tr:hover td {
+    background: #f2f2f2;
+    background: -webkit-gradient(linear, left top, left bottom, from(#f2f2f2), to(#f0f0f0));
+    background: -moz-linear-gradient(top, #f2f2f2, #f0f0f0);
+}
+
+.simple-little-table a:link,
+.simple-little-table a:visited {
+    color: #666;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.simple-little-table a:visited {
+    color: #999;
+}
+
+.simple-little-table a:active,
+.simple-little-table a:hover {
+    color: #bd5a35;
+    text-decoration: underline;
+}
+
+.bullet {
+    margin-left: 0;
+    list-style: none;
+    counter-reset: li;
+}
+
+.bullet li {
+    position: relative;
+    margin-bottom: 1.5em;
+    border: 3px solid #3d2602ff;
+    padding: 0.6em;
+    border-radius: 4px;
+    background: #b36c028a;
+    color: #3d2602ff;
+    font-family: "Trebuchet MS", "Lucida Sans";
+}
+
+.bullet li:before {
+    position: absolute;
+    top: -0.7em;
+    padding-left: 0.4em;
+    padding-right: 0.4em;
+    font-size: 16px;
+    font-weight: bold;
+    color: #DCC24B;
+    background: #FEFEFE;
+    border-radius: 50%;
+    counter-increment: li;
+    content: counter(li);
+}
