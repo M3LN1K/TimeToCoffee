@@ -1,0 +1,178 @@
+/* CSS переменные для единообразия дизайна */
+:root {
+    /* Цветовая палитра */
+    --primary-color: #8B4513;
+    --primary-dark: #654321;
+    --primary-light: #A0522D;
+    --secondary-color: #D2691E;
+    --accent-color: #C19A6B;
+    --light-color: #F5F5DC;
+    --dark-color: #3E2723;
+    --text-color: #4A2C2A;
+    --text-light: #8B7355;
+    --white: #FFFFFF;
+    --gray-light: #F8F8F8;
+    --gray: #E0E0E0;
+    --gray-dark: #9E9E9E;
+    
+    /* Новый цвет - кофе с молоком */
+    --coffee-with-milk: #E8D5C4;
+    --coffee-cream: #F3E5D8;
+    --light-coffee: #D7C1A9;
+    
+    /* Остальные переменные без изменений */
+    /* Отступы */
+    --section-padding: 5rem 0;
+    --container-padding: 0 20px;
+    --card-padding: 2rem;
+    
+    /* Тени */
+    --card-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    --header-shadow: 0 2px 15px rgba(0,0,0,0.1);
+    --hover-shadow: 0 10px 30px rgba(0,0,0,0.15);
+    
+    /* Анимации */
+    --transition-fast: 0.3s ease;
+    --transition-medium: 0.5s ease;
+    --transition-slow: 0.8s ease;
+    
+    /* Границы */
+    --border-radius: 12px;
+    --border-radius-small: 8px;
+    
+    /* Шрифты */
+    --font-main: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    --font-heading: 'Georgia', serif;
+}
+
+/* Общие сбросы стилей */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--font-main);
+    line-height: 1.7;
+    color: var(--text-color);
+    background-color: var(--light-color);
+    overflow-x: hidden;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: var(--container-padding);
+}
+
+/* Типография */
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+    font-weight: 600;
+    line-height: 1.3;
+    margin-bottom: 1rem;
+    color: var(--dark-color);
+}
+
+h1 {
+    font-size: 3.5rem;
+}
+
+h2 {
+    font-size: 2.8rem;
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+h4 {
+    font-size: 1.5rem;
+}
+
+p {
+    margin-bottom: 1.5rem;
+    font-size: 1.1rem;
+}
+
+/* Общие классы */
+.section-title {
+    text-align: center;
+    margin-bottom: 4rem;
+    font-size: 2.8rem;
+    color: var(--dark-color);
+    position: relative;
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 3px;
+    background: linear-gradient(90deg, var(--primary-color), var(--accent-color));
+    border-radius: 2px;
+}
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: var(--border-radius);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all var(--transition-fast);
+    text-align: center;
+}
+
+.btn-primary {
+    background: linear-gradient(135deg, var(--primary-color), var(--primary-dark));
+    color: var(--white);
+}
+
+.btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--hover-shadow);
+}
+
+.btn-secondary {
+    background: transparent;
+    color: var(--primary-color);
+    border: 2px solid var(--primary-color);
+}
+
+.btn-secondary:hover {
+    background: var(--primary-color);
+    color: var(--white);
+    transform: translateY(-2px);
+}
+
+.btn-block {
+    width: 100%;
+}
+
+/* Скрытие элементов для доступности */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
