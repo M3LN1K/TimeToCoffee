@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TimeToCoffe - Уникальная японская кофейня</title>
+    <meta name="description" content="TimeToCoffe - место, где японская эстетика встречается с искусством кофе. Мастер-классы, гадания и косплей события в самом сердце города.">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    
+    <!-- Иконки -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <a href="#" class="logo">
+                    <i class="fas fa-mug-hot"></i>
+                    TimeTo<span>Coffe</span>
+                </a>
+                <button class="mobile-menu-btn" aria-label="Открыть меню">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <nav class="main-nav">
+                    <ul>
+                        <li><a href="#about">О нас</a></li>
+                        <li><a href="#history">История</a></li>
+                        <li><a href="#features">Особенности</a></li>
+                        <li><a href="#events">Мероприятия</a></li>
+                        <li><a href="menu.html">Меню</a></li>
+                        <li><a href="#app">Приложение</a></li>
+                        <li><a href="#contact">Контакты</a></li>
+                        <li><a href="#booking" class="btn btn-primary">Забронировать</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <!-- Video Background 16:9 -->
+        <div class="video-background">
+            <div class="video-container-16-9">
+                <video autoplay muted loop playsinline preload="auto" poster="images\gallery\hero-poster.jpeg">
+                    <!--<source src="images\video\bg5.mp4" type="video/mp4">
+                    Ваш браузер не поддерживает видео тег.-->
+                </video>
+            </div>
+            <div class="video-overlay"></div>
+        </div>
+        
+        <div class="container">
+            <div class="hero-content">
+                <h1>Погрузитесь в мир гармонии кофе и японской эстетики</h1>
+                <p>TimeToCoffe - уникальное пространство, где каждая чашка кофе становится искусством, а каждое посещение - незабываемым опытом</p>
+                <div class="hero-buttons">
+                    <a href="#booking" class="btn btn-primary">Забронировать столик</a>
+                    <a href="#app" class="btn btn-secondary">Скачать приложение</a>
+                </div>
+            </div>
+        </div>
+        <div class="hero-scroll">
+            <span>Листайте вниз</span>
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">Добро пожаловать в TimeToCoffe</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p class="intro">TimeToCoffe - это не просто кофейня, а настоящий культурный центр, где традиции японской чайной церемонии встречаются с современным искусством приготовления кофе.</p>
+                    
+                    <div class="about-features">
+                        <div class="feature-item">
+                            <i class="fas fa-leaf"></i>
+                            <h3>Натуральные ингредиенты</h3>
+                            <p>Используем только отборные зерна арабики из экологически чистых регионов</p>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-users"></i>
+                            <h3>Профессиональные бариста</h3>
+                            <p>Наша команда прошла обучение у японских мастеров кофейного искусства</p>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-heart"></i>
+                            <h3>Уникальная атмосфера</h3>
+                            <p>Дизайн интерьера вдохновлен японскими садами и современным минимализмом</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <img src="images\gallery\about-interior3.jpeg" alt="Интерьер кофейни TimeToCoffe" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- History Section -->
+    <section id="history" class="history">
+        <div class="container">
+            <h2 class="section-title">Наша история</h2>
+            <div class="history-content">
+                <div class="history-image">
+                    <img src="images\gallery\history-founders.jpeg" alt="Основатели TimeToCoffe" loading="lazy">
+                </div>
+                <div class="history-text">
+                    <h3>От мечты к реальности</h3>
+                    <p>Идея TimeToCoffe родилась в 2018 году, когда наши основатели - Мария и Такеши - путешествовали по Японии. Вдохновившись гармонией традиционных чайных церемоний и современной кофейной культурой Токио, они решили создать уникальное пространство в Москве.</p>
+                    
+                    <div class="milestones">
+                        <div class="milestone">
+                            <span class="year">2019</span>
+                            <p>Открытие первой кофейни в районе Хамовники</p>
+                        </div>
+                        <div class="milestone">
+                            <span class="year">2020</span>
+                            <p>Запуск программы мастер-классов и гаданий на кофейной гуще</p>
+                        </div>
+                        <div class="milestone">
+                            <span class="year">2022</span>
+                            <p>Расширение и создание мобильного приложения для заказов</p>
+                        </div>
+                    </div>
+                    
+                    <blockquote class="founder-quote">
+                        "Мы верим, что кофе - это не просто напиток, а искусство, которое объединяет людей и создает особую атмосферу гармонии"
+                        <cite>- Мария и Такеши, основатели</cite>
+                    </blockquote>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="container">
+            <h2 class="section-title">Почему выбирают именно нас?</h2>
+            <div class="features-grid">
+                <div class="feature-card" data-bg-image="coffee-beans-blurred.jpeg">
+                    <div class="feature-overlay"></div>
+                    <div class="feature-content">
+                        <div class="feature-icon">
+                            <i class="fas fa-coffee"></i>
+                        </div>
+                        <h3>Уникальные кофейные смеси</h3>
+                        <p>Эксклюзивные смеси, созданные специально для TimeToCoffe японскими тостмейстерами. Каждая чашка - это произведение искусства с идеально сбалансированным вкусом.</p>
+                    </div>
+                </div>
+                
+                <div class="feature-card" data-bg-image="fortune-telling-blurred.jpeg">
+                    <div class="feature-overlay"></div>
+                    <div class="feature-content">
+                        <div class="feature-icon">
+                            <i class="fas fa-magic"></i>
+                        </div>
+                        <h3>Гадания на кофейной гуще</h3>
+                        <p>Единственная в Москве кофейня с профессиональными хиромантами. Раскройте тайны будущего через загадочные узоры кофейной гущи в атмосфере таинственности.</p>
+                    </div>
+                </div>
+                
+                <div class="feature-card" data-bg-image="barista-training-blurred.jpeg">
+                    <div class="feature-overlay"></div>
+                    <div class="feature-content">
+                        <div class="feature-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <h3>Образовательные программы</h3>
+                        <p>Регулярные мастер-классы от чемпионов России по латте-арту и японских кофейных мастеров. Станьте настоящим бариста всего за одно занятие!</p>
+                    </div>
+                </div>
+                
+                <div class="feature-card" data-bg-image="cosplay-event-blurred.jpeg">
+                    <div class="feature-overlay"></div>
+                    <div class="feature-content">
+                        <div class="feature-icon">
+                            <i class="fas fa-theater-masks"></i>
+                        </div>
+                        <h3>Косплей-пространство</h3>
+                        <p>Ежемесячные тематические вечера для поклонников японской анимации и культуры. Погрузитесь в мир аниме и манги в уютной атмосфере.</p>
+                    </div>
+                </div>
+                
+                <div class="feature-card" data-bg-image="eco-coffee-blurred.jpeg">
+                    <div class="feature-overlay"></div>
+                    <div class="feature-content">
+                        <div class="feature-icon">
+                            <i class="fas fa-seedling"></i>
+                        </div>
+                        <h3>Эко-подход</h3>
+                        <p>Используем только биоразлагаемую посуду и поддерживаем фермеров, практикующих органическое земледелие. Забота о природе - наш приоритет.</p>
+                    </div>
+                </div>
+                
+                <div class="feature-card" data-bg-image="coffee-shop-workspace-blurred.jpeg">
+                    <div class="feature-overlay"></div>
+                    <div class="feature-content">
+                        <div class="feature-icon">
+                            <i class="fas fa-wifi"></i>
+                        </div>
+                        <h3>Идеальное рабочее пространство</h3>
+                        <p>Быстрый интернет, удобные розетки и уединенные зоны для работы и встреч. Идеальное место для фрилансеров и деловых встреч.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Events Section -->
+    <section id="events" class="events">
+        <div class="container">
+            <h2 class="section-title">Наши мероприятия</h2>
+            <div class="events-tabs">
+                <button class="tab-btn active" data-tab="workshops">Мастер-классы</button>
+                <button class="tab-btn" data-tab="fortune">Гадания</button>
+                <button class="tab-btn" data-tab="cosplay">Косплей</button>
+                <button class="tab-btn" data-tab="special">Специальные события</button>
+            </div>
+            
+            <div class="events-content">
+                <div class="tab-content active" id="workshops-tab">
+                    <div class="event-details">
+                        <h3>Кофейные мастер-классы</h3>
+                        <p>Научитесь искусству приготовления идеального кофе под руководством наших экспертов:</p>
+                        <ul>
+                            <li>Основы работы с эспрессо-машиной</li>
+                            <li>Искусство латте-арта: от базовых сердечек до сложных портретов</li>
+                            <li>Японские методы заваривания: пуровер, кемекс, сифон</li>
+                            <li>Дегустация и определение вкусовых профилей</li>
+                        </ul>
+                        <div class="event-schedule">
+                            <h4>Расписание:</h4>
+                            <p>Каждую субботу, 11:00 и 15:00</p>
+                            <p>Продолжительность: 2 часа</p>
+                            <p>Стоимость: 1500₽ (включая материалы и дегустацию)</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="tab-content" id="fortune-tab">
+                    <div class="event-details">
+                        <h3>Гадания на кофейной гуще</h3>
+                        <p>Уникальная услуга, доступная только в TimeToCoffe. Наш эксперт по кофейной хиромантии поможет:</p>
+                        <ul>
+                            <li>Раскрыть тайны будущего через узоры кофейной гущи</li>
+                            <li>Получить ответы на важные жизненные вопросы</li>
+                            <li>Узнать о скрытых возможностях и предстоящих изменениях</li>
+                            <li>Понять текущие энергетические потоки в вашей жизни</li>
+                        </ul>
+                        <div class="event-schedule">
+                            <h4>Когда:</h4>
+                            <p>Пятница и суббота, с 18:00 до 22:00</p>
+                            <p>Предварительная запись обязательна</p>
+                            <p>Стоимость: 800₽ (включая специальный церемониальный кофе)</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="tab-content" id="cosplay-tab">
+                    <div class="event-details">
+                        <h3>Косплей-мероприятия</h3>
+                        <p>Погрузитесь в мир японской поп-культуры на наших тематических вечерах:</p>
+                        <ul>
+                            <li>Аниме-показы и обсуждения</li>
+                            <li>Косплей-конкурсы с ценными призами</li>
+                            <li>Мастер-классы по созданию костюмов и грима</li>
+                            <li>Тематические фотосессии в специально оформленных зонах</li>
+                            <li>Встречи с российскими косплеерами</li>
+                        </ul>
+                        <div class="event-schedule">
+                            <h4>Ближайшие события:</h4>
+                            <p>"Осень в Токио" - 28 октября, 19:00</p>
+                            <p>"Аниме-ночь: Наруто" - 11 ноября, 18:00</p>
+                            <p>Вход: 500₽ (включая тематический напиток)</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="tab-content" id="special-tab">
+                    <div class="event-details">
+                        <h3>Специальные события</h3>
+                        <p>Эксклюзивные мероприятия, которые проходят только в TimeToCoffe:</p>
+                        <ul>
+                            <li>Встречи с японскими кофейными мастерами</li>
+                            <li>Дегустации редких сортов кофе из разных регионов Японии</li>
+                            <li>Ханами - праздник цветения сакуры с традиционными угощениями</li>
+                            <li>Ночные кинопоказы японского арт-хауса</li>
+                            <li>Литературные вечера с чтением хайку</li>
+                        </ul>
+                        <div class="event-schedule">
+                            <h4>Следите за анонсами:</h4>
+                            <p>Все специальные события анонсируем в соцсетях и через наше приложение</p>
+                            <p>Предварительная регистрация обязательна</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- App Section -->
+    <section id="app" class="app-section">
+        <div class="container">
+            <div class="app-content">
+                <div class="app-text">
+                    <h2>Приложение TimeToCoffe</h2>
+                    <p>Все возможности кофейни теперь в вашем смартфоне!</p>
+                    
+                    <div class="app-features">
+                        <div class="app-feature">
+                            <i class="fas fa-mobile-alt"></i>
+                            <div>
+                                <h4>Быстрый заказ</h4>
+                                <p>Заказывайте любимые напитки заранее и забирайте без очереди</p>
+                            </div>
+                        </div>
+                        
+                        <div class="app-feature">
+                            <i class="fas fa-calendar-check"></i>
+                            <div>
+                                <h4>Бронирование мероприятий</h4>
+                                <p>Записывайтесь на мастер-классы и события в пару кликов</p>
+                            </div>
+                        </div>
+                        
+                        <div class="app-feature">
+                            <i class="fas fa-gift"></i>
+                            <div>
+                                <h4>Бонусная программа</h4>
+                                <p>Получайте скидки и специальные предложения</p>
+                            </div>
+                        </div>
+                        
+                        <div class="app-feature">
+                            <i class="fas fa-bell"></i>
+                            <div>
+                                <h4>Персональные уведомления</h4>
+                                <p>Узнавайте первыми о новых событиях и акциях</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="app-download">
+                        <p>Скачайте приложение бесплатно:</p>
+                        <div class="download-buttons">
+                            <a href="#" class="download-btn">
+                                <i class="fab fa-apple"></i>
+                                <span>App Store</span>
+                            </a>
+                            <a href="#" class="download-btn">
+                                <i class="fab fa-google-play"></i>
+                                <span>Google Play</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="app-image">
+                    <img src="images\gallery\app-screenshot.jpeg" alt="Приложение TimeToCoffe" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Section -->
+    <section id="booking" class="booking">
+        <div class="container">
+            <h2 class="section-title">Забронируйте ваш визит</h2>
+            <div class="booking-content">
+                <div class="booking-info">
+                    <h3>Почему стоит забронировать заранее?</h3>
+                    <ul>
+                        <li>Гарантия лучшего места в кофейне</li>
+                        <li>Подготовим специальное меню по вашим предпочтениям</li>
+                        <li>Возможность зарезервировать место для мероприятий</li>
+                        <li>Персональное обслуживание от нашего бариста</li>
+                    </ul>
+                    
+                    <div class="contact-info">
+                        <h4>Контакты для бронирования:</h4>
+                        <p><i class="fas fa-phone"></i> +7 (495) 123-45-67</p>
+                        <p><i class="fas fa-envelope"></i> booking@timetocoffe.ru</p>
+                        <p><i class="fas fa-clock"></i> Ежедневно с 8:00 до 23:00</p>
+                    </div>
+                    <div class="location-map">
+                        <h3>Мы находимся здесь</h3>
+                        <div class="map-container">
+                            <iframe 
+                                src="https://yandex.ru/map-widget/v1/?ll=35.911559%2C56.858721&z=17&pt=35.911559%2C56.858721%2Ccomma&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgg1NzAwNjM0MxJI0KDQvtGB0YHQuNGPLCDQotC10LLRgdC40L3RgdC60LjQuSDQs9C-0YHRg9C00LDRgNGB0YLQstC10L3QvdGL0Lkg0YPQu9C40YbQsCwg0KLRiy4g0KLRg9C30YzYstGD0YnRiNC10LLQuNGPLCAzMSIKDZbLQkIVb%2BpVQg%3D%3D&text=%D0%A2%D0%B2%D0%B5%D1%80%D1%8C%2C%20%D0%A2%D1%80%D1%91%D1%85%D1%81%D0%B2%D1%8F%D1%82%D1%81%D0%BA%D0%B0%D1%8F%20%D1%83%D0%BB%D0%B8%D1%86%D0%B0%2C%2031" 
+                                width="100%" 
+                                height="400" 
+                                frameborder="0"
+                                loading="lazy"
+                                allowfullscreen
+                                aria-label="Карта с расположением кофейни TimeToCoffe по адресу Трёхсвятская улица, 31, Тверь ">
+                            </iframe>
+                        </div>
+                        <div class="map-address">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Трёхсвятская улица, 31, Тверь</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="booking-form">
+                    <form id="reservation-form">
+                        <div class="form-group">
+                            <label for="name">Ваше имя *</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone">Телефон *</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="date">Дата визита *</label>
+                            <input type="date" id="date" name="date" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="time">Время *</label>
+                            <input type="time" id="time" name="time" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="guests">Количество гостей *</label>
+                            <select id="guests" name="guests" required>
+                                <option value="1">1 человек</option>
+                                <option value="2">2 человека</option>
+                                <option value="3">3 человека</option>
+                                <option value="4">4 человека</option>
+                                <option value="5">5+ человек</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="occasion">Повод визита</label>
+                            <select id="occasion" name="occasion">
+                                <option value="regular">Обычное посещение</option>
+                                <option value="business">Деловая встреча</option>
+                                <option value="romantic">Романтическое свидание</option>
+                                <option value="celebration">Праздник</option>
+                                <option value="event">Участие в мероприятии</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Особые пожелания</label>
+                            <textarea id="message" name="message" placeholder="Аллергии, предпочтения по месту, специальные запросы..."></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary btn-block" id="submit-btn">Забронировать столик</button>
+                    </form>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="logo">
+                        <i id="contact" class="fas fa-mug-hot"></i>
+                        TimeTo<span>Coffe</span>
+                    </div>
+                    <p>Уникальная японская кофейня в сердце Москвы. Место, где рождаются традиции и создаются воспоминания.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="ВКонтакте"><i class="fab fa-vk"></i></a>
+                        <a href="#" aria-label="Telegram"><i class="fab fa-telegram"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Контакты</h4>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Трёхсвятская улица, 31, Тверь</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <span>+7 (495) 123-45-67</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>TimeToCoffe@yandex.ru</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-clock"></i>
+                        <span>Пн-Пт: 8:00-23:00<br>Сб-Вс: 9:00-00:00</span>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Навигация</h4>
+                    <ul class="footer-links">
+                        <li><a href="#about">О кофейне</a></li>
+                        <li><a href="#history">Наша история</a></li>
+                        <li><a href="#events">Мероприятия</a></li>
+                        <li><a href="#menu">Меню</a></li>
+                        <li><a href="#app">Приложение</a></li>
+                        <li><a href="#booking">Бронирование</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Рассылка</h4>
+                    <p>Подпишитесь на новости о мероприятиях и специальных предложениях</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Ваш email" required>
+                        <button type="submit" class="btn btn-primary">Подписаться</button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2023 TimeToCoffe. Все права защищены.</p>
+                <div class="footer-links">
+                    <a href="#">Политика конфиденциальности</a>
+                    <a href="#">Условия использования</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/mobile-menu.js"></script>
+    <script src="js/menu-tabs.js"></script>
+    <script src="js/booking-form.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
