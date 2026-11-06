@@ -8,6 +8,9 @@
         <!-- Подключаем стили. Путь идет от папки public/ -->
         <link rel="stylesheet" href="{{ asset('css/style.css') }}">
         <link rel="stylesheet" href="{{ asset('css/responsive.css') }}">
+        <link rel="stylesheet" href="{{ asset('css/menu.css') }}">
+        <link rel="stylesheet" href="{{ asset('css/checkout.css') }}">
+        <link rel="stylesheet" href="{{ asset('css/variables.css') }}">
     </head>
     <body>
         <!-- Шапка сайта -->
@@ -26,5 +29,6 @@
         <script src="{{ asset('js/mobile-menu.js') }}"></script>
         <script src="{{ asset('js/menu-tabs.js') }}"></script>
         <script src="{{ asset('js/booking-form.js') }}"></script>
+        <script src="{{ asset('js/checkout.js') }}"></script>
     </body>
 </html>

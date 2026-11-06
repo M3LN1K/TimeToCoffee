@@ -29,20 +29,20 @@ document.addEventListener('DOMContentLoaded', function() {
         function initMenuHeroSlider() {
             const backgrounds = document.querySelectorAll('.menu-hero-bg');
             let currentIndex = 0;
-            
+
             if (backgrounds.length <= 1) return;
-            
+
             function showNextBackground() {
                 // Скрываем текущий фон
                 backgrounds[currentIndex].classList.remove('active');
-                
+
                 // Переходим к следующему
                 currentIndex = (currentIndex + 1) % backgrounds.length;
-                
+
                 // Показываем новый фон
                 backgrounds[currentIndex].classList.add('active');
             }
-            
+
             // Меняем фон каждые 5 секунд
             setInterval(showNextBackground, 5000);
         }
@@ -55,11 +55,11 @@ document.addEventListener('DOMContentLoaded', initMenuHeroSlider);
         categoryBtns.forEach(btn => {
             btn.addEventListener('click', function() {
                 const category = this.getAttribute('data-category');
-                
+
                 // Обновляем активную кнопку
                 categoryBtns.forEach(b => b.classList.remove('active'));
                 this.classList.add('active');
-                
+
                 // Фильтруем элементы
                 filterMenuItems(category);
             });
@@ -69,7 +69,7 @@ document.addEventListener('DOMContentLoaded', initMenuHeroSlider);
     function filterMenuItems(category) {
         menuItems.forEach(item => {
             const itemCategory = item.getAttribute('data-category');
-            
+
             if (category === 'all' || category === itemCategory) {
                 item.style.display = 'block';
                 setTimeout(() => {
@@ -97,7 +97,7 @@ document.addEventListener('DOMContentLoaded', initMenuHeroSlider);
             btn.addEventListener('click', function() {
                 const itemName = this.getAttribute('data-item');
                 const itemPrice = parseInt(this.getAttribute('data-price'));
-                
+
                 addToCart(itemName, itemPrice);
                 showAddToCartAnimation(this);
             });
@@ -110,7 +110,7 @@ document.addEventListener('DOMContentLoaded', initMenuHeroSlider);
     function addToCart(itemName, itemPrice) {
         // Проверяем, есть ли товар уже в корзине
         const existingItem = cart.find(item => item.name === itemName);
-        
+
         if (existingItem) {
             existingItem.quantity += 1;
         } else {
@@ -120,13 +120,13 @@ document.addEventListener('DOMContentLoaded', initMenuHeroSlider);
                 quantity: 1
             });
         }
-        
+
         // Сохраняем в localStorage
         localStorage.setItem('timeToCoffeeCart', JSON.stringify(cart));
-        
+
         // Обновляем отображение
         updateCartDisplay();
-        
+
         // Показываем уведомление
         showToast(`"${itemName}" добавлен в корзину!`, 'success');
     }
@@ -204,11 +204,11 @@ document.addEventListener('DOMContentLoaded', initMenuHeroSlider);
 
     // Сохраняем корзину и переходим на страницу оформления
     localStorage.setItem('timeToCoffeeCart', JSON.stringify(cart));
-    
+
     // Рассчитываем общую сумму для передачи
     const total = cart.reduce((sum, item) => sum + (item.price * item.quantity), 0);
     localStorage.setItem('orderTotal', total.toString());
-    
+
     window.location.href = 'checkout.html';
 }
 
@@ -216,7 +216,7 @@ document.addEventListener('DOMContentLoaded', initMenuHeroSlider);
     function showAddToCartAnimation(button) {
         button.innerHTML = '<i class="fas fa-check"></i> Добавлено';
         button.style.background = '#4CAF50';
-        
+
         setTimeout(() => {
             button.innerHTML = '<i class="fas fa-plus"></i> Добавить';
             button.style.background = '';
@@ -228,7 +228,7 @@ document.addEventListener('DOMContentLoaded', initMenuHeroSlider);
         const toast = document.createElement('div');
         toast.className = `toast toast-${type}`;
         toast.textContent = message;
-        
+
         toast.style.cssText = `
             position: fixed;
             top: 20px;
@@ -243,14 +243,14 @@ document.addEventListener('DOMContentLoaded', initMenuHeroSlider);
             transition: transform 0.3s ease;
             max-width: 300px;
         `;
-        
+
         document.body.appendChild(toast);
-        
+
         // Анимация появления
         setTimeout(() => {
             toast.style.transform = 'translateX(0)';
         }, 100);
-        
+
         // Автоматическое скрытие
         setTimeout(() => {
             toast.style.transform = 'translateX(400px)';
@@ -266,5 +266,5 @@ document.addEventListener('DOMContentLoaded', initMenuHeroSlider);
         updateCartQuantity
     };
 
-    
+
 });

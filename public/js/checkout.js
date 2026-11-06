@@ -16,17 +16,17 @@ document.addEventListener('DOMContentLoaded', function() {
     // Инициализация
     initCheckout();
 
-    function initCheckout() {
+    /*function initCheckout() {
         loadCart();
         if (cart.length === 0) {
             showToast('Корзина пуста! Перенаправляем в меню...', 'error');
-            setTimeout(() => window.location.href = 'menu.html', 2000);
+            setTimeout(() => window.location.href = '/menu', 2000);
             return;
         }
         setupEventListeners();
         updateOrderSummary();
         toggleDeliveryOptions();
-    }
+    }*/
 
     function loadCart() {
         try {
@@ -58,7 +58,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
         const pickupPayments = document.querySelector('.pickup-payments');
         const deliveryPayments = document.querySelector('.delivery-payments');
-        
+
         if (isDelivery) {
             pickupPayments.style.display = 'none';
             deliveryPayments.style.display = 'block';
@@ -108,10 +108,10 @@ document.addEventListener('DOMContentLoaded', function() {
 
     async function handleOrderSubmit(e) {
         e.preventDefault();
-        
+
         const submitBtn = checkoutForm.querySelector('.btn-submit');
         const originalText = submitBtn.innerHTML;
-        
+
         submitBtn.disabled = true;
         submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Оформляем заказ...';
 
@@ -150,11 +150,11 @@ document.addEventListener('DOMContentLoaded', function() {
 
             if (response.success) {
                 showToast('Заказ успешно оформлен!', 'success');
-                
+
                 // Очищаем корзину
                 localStorage.removeItem('timeToCoffeeCart');
                 localStorage.removeItem('orderTotal');
-                
+
                 // Перенаправляем на страницу подтверждения
                 setTimeout(() => {
                     window.location.href = `order-success.html?order_id=${response.order_id}`;
@@ -208,24 +208,24 @@ document.addEventListener('DOMContentLoaded', function() {
             });
 
             console.log('Response status:', response.status);
-            
+
             if (!response.ok) {
                 throw new Error(`HTTP error! status: ${response.status}`);
             }
 
             const result = await response.json();
             console.log('Server response:', result);
-            
+
             return result;
-            
+
         } catch (error) {
             console.error('Network error:', error);
-            
+
             // Проверяем разные типы ошибок
             if (error.name === 'TypeError') {
                 throw new Error('Проблема с подключением к серверу. Проверьте настройки сервера.');
             }
-            
+
             throw new Error('Ошибка сети: ' + error.message);
         }
     }
@@ -237,7 +237,7 @@ document.addEventListener('DOMContentLoaded', function() {
         const toast = document.createElement('div');
         toast.className = `toast ${type}`;
         toast.textContent = message;
-        
+
         Object.assign(toast.style, {
             position: 'fixed',
             top: '20px',
@@ -252,9 +252,9 @@ document.addEventListener('DOMContentLoaded', function() {
             transition: 'transform 0.3s ease',
             maxWidth: '300px'
         });
-        
+
         document.body.appendChild(toast);
-        
+
         setTimeout(() => toast.style.transform = 'translateX(0)', 100);
         setTimeout(() => {
             toast.style.transform = 'translateX(400px)';
